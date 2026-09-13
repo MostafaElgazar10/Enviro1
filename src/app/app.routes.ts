@@ -23,5 +23,5 @@ export const routes: Routes = [
     {path : 'news' , component : NewsComponent },
     {path : 'products' , component : ProductsComponent },
     {path : 'plastic Recycling' , component : PlasticComponent },
-    // {path : '**' , component : NotfoundComponent }
+    {path : '**' , component : NotfoundComponent }
 ];
