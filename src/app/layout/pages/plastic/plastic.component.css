@@ -1,0 +1,44 @@
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/breadcrumb/plastic_recycle.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+/* .hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+} */
+
+

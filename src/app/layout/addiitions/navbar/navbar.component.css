@@ -1,0 +1,89 @@
+/* =================================
+   GLOBAL
+================================= */
+
+:root {
+    --primary-color: #087d68;
+    --dark-green: #064f45;
+    --gold-color: #e2b84b;
+    --text-color: #555;
+    --light-bg: #f8f8f8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =================================
+   NAVBAR
+================================= */
+.navbar-brand h1{
+    color: #087d68
+}
+.navbar {
+    min-height: 105px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar-nav {
+    gap: 35px;
+}
+/* 
+.nav-link {
+    color: #087d68;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+} */
+
+.search-icon {
+    color: #333;
+    font-size: 18px;
+}
+
+.quote-btn {
+   
+    padding: 16px 35px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.quote-btn:hover {
+    background-color: #064f45;
+    border-color: #064f45;
+} 
+
+
+/* =================================
+   HERO
+================================= */
