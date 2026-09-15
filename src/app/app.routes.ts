@@ -10,6 +10,8 @@ import { ProductsComponent } from './layout/pages/products/products.component';
 import { NotfoundComponent } from './layout/addiitions/notfound/notfound.component';
 import { ServicesComponent } from './layout/pages/services/services.component';
 import { PlasticComponent } from './layout/pages/plastic/plastic.component';
+import { ProductDetailsComponent } from './layout/pages/product-details/product-details.component';
+import { BlogDetailsComponent } from './layout/pages/blog-details/blog-details.component';
 
 export const routes: Routes = [
     {path : '', redirectTo : 'home' , pathMatch : "full" },
@@ -23,5 +25,7 @@ export const routes: Routes = [
     {path : 'news' , component : NewsComponent },
     {path : 'products' , component : ProductsComponent },
     {path : 'plastic Recycling' , component : PlasticComponent },
+    {path : 'product-details' , component : ProductDetailsComponent },
+    {path : 'blog-details' , component : BlogDetailsComponent },
     {path : '**' , component : NotfoundComponent }
 ];

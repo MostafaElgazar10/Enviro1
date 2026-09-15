@@ -1,0 +1,341 @@
+ 
+
+
+
+
+
+
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/service/service_3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+.hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            color: #444;
+        }
+
+        /* =========================
+           Contact Section
+        ========================== */
+
+        .contact-section {
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        /* Map */
+        .contact-map {
+            width: 100%;
+            height: 390px;
+            overflow: hidden;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(25%);
+        }
+
+        /* Main Content */
+        .contact-content {
+            position: relative;
+            margin-top: -20px;
+        }
+
+        /* =========================
+           Sidebar
+        ========================== */
+
+        .contact-sidebar {
+            background: #fff;
+            min-height: 445px;
+            padding: 40px 45px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info-item {
+            margin-bottom: 35px;
+        }
+
+        .contact-info-item:last-of-type {
+            margin-bottom: 30px;
+        }
+
+        .contact-info-item h5 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .contact-info-item p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .contact-divider {
+            height: 1px;
+            background: #eee;
+            margin: 30px 0;
+        }
+
+        /* Social */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .social-links a {
+            width: 55px;
+            height: 55px;
+            background: #f2f7f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #222;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #087f68;
+            color: #fff;
+        }
+
+        /* =========================
+           Form
+        ========================== */
+
+        .contact-form-wrapper {
+            padding: 45px 30px 0 70px;
+        }
+
+        .contact-small-title {
+            color: #d9b87c;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .contact-title {
+            color: #006b58;
+            font-size: 55px;
+            line-height: 1;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-form .form-control {
+            height: 76px;
+            border: 0;
+            border-radius: 0;
+            background: #edf4f6;
+            padding: 0 25px;
+            font-size: 16px;
+            color: #555;
+            box-shadow: none;
+        }
+
+        .contact-form .form-control::placeholder {
+            color: #555;
+            opacity: 1;
+        }
+
+        .contact-form .form-control:focus {
+            background: #edf4f6;
+            box-shadow: 0 0 0 2px rgba(0, 107, 88, 0.15);
+        }
+
+        .contact-form textarea.form-control {
+            height: 190px;
+            padding-top: 25px;
+            resize: none;
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 25px;
+        }
+
+        .submit-btn {
+            background: #087f68;
+            border: 0;
+            color: #fff;
+            padding: 17px 45px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #005c4c;
+            color: #fff;
+        }
+
+        /* =========================
+           Responsive
+        ========================== */
+
+        @media (max-width: 991px) {
+
+            .contact-map {
+                height: 320px;
+            }
+
+            .contact-content {
+                margin-top: 0;
+            }
+
+            .contact-sidebar {
+                min-height: auto;
+                margin-bottom: 30px;
+            }
+
+            .contact-form-wrapper {
+                padding: 20px 15px 0;
+            }
+
+            .contact-title {
+                font-size: 45px;
+                margin-bottom: 40px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .contact-map {
+                height: 280px;
+            }
+
+            .contact-sidebar {
+                padding: 35px 25px;
+            }
+
+            .contact-info-item h5 {
+                font-size: 18px;
+            }
+
+            .contact-info-item p {
+                font-size: 15px;
+            }
+
+            .contact-title {
+                font-size: 38px;
+            }
+
+            .contact-small-title {
+                font-size: 13px;
+                letter-spacing: 2px;
+            }
+
+            .contact-form .form-control {
+                height: 65px;
+            }
+
+            .contact-form textarea.form-control {
+                height: 160px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pp{
+    color : black
+}
+
+
+        .pp :hover{
+
+            color: #087d68
+        }
+
+
+
+

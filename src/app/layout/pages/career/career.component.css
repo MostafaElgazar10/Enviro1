@@ -1,0 +1,232 @@
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/service/service_3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+.hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* Section */
+        .join-section {
+            min-height: calc(100vh - 78px);
+            padding: 40px 15px 70px;
+            background: #fff;
+        }
+
+        .join-icon {
+            color: #78b82a;
+            font-size: 27px;
+            line-height: 1;
+        }
+
+        .join-small-title {
+            color: var(--gold);
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-top: 3px;
+        }
+
+        .main-title {
+            margin: 14px 0 8px;
+            color: #005343;
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        .description {
+            max-width: 1000px;
+            margin: auto;
+            color: #dcb866;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.8;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+        }
+
+        /* Form Card */
+        .form-card {
+            max-width: 550px;
+            margin: 40px auto 0;
+            padding: 20px 24px 24px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .13);
+        }
+
+        /* Upload */
+        .upload-wrapper {
+            padding: 0;
+            margin-bottom: 35px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+        }
+
+        .upload-box {
+            height: 155px;
+            margin: 22px;
+            border: 2px dashed #e7c77c;
+            border-radius: 6px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color: #ddb75f;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .upload-box:hover {
+            background: #fffaf0;
+            border-color: #d9ae4e;
+        }
+
+        .upload-box i {
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        .upload-box span {
+            font-size: 14px;
+            color: #ddb75f;
+        }
+
+        /* Inputs */
+        .form-control {
+            height: 43px;
+            border: 1px solid #e2e2e2;
+            border-radius: 6px;
+            font-size: 12px;
+            color: #555;
+            box-shadow: none;
+        }
+
+        .form-control::placeholder {
+            color: #777;
+            opacity: 1;
+        }
+
+        .form-control:focus {
+            border-color: #008268;
+            box-shadow: 0 0 0 2px rgba(0, 130, 104, .08);
+        }
+
+        /* Send */
+        .send-btn {
+            display: block;
+            margin: 28px auto 0;
+
+            background: var(--green);
+            color: white;
+            border: 0;
+            border-radius: 7px;
+
+            min-width: 82px;
+            height: 42px;
+
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: .5px;
+        }
+
+        .send-btn:hover {
+            background: var(--dark-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                gap: 0;
+            }
+
+            .navbar-nav .nav-link {
+                padding: 10px 0 !important;
+            }
+
+            .quote-btn {
+                margin: 10px 0;
+            }
+
+            .description {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .join-section {
+                padding-top: 30px;
+            }
+
+            .main-title {
+                font-size: 22px;
+            }
+
+            .form-card {
+                padding: 15px;
+            }
+
+            .upload-box {
+                margin: 15px;
+            }
+        }
+    

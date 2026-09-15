@@ -1,0 +1,380 @@
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/breadcrumb/blog_bg.jpg");
+    background-size: cover;
+    background-position: 10% 90%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+.hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+
+/* =========================
+   Section Title
+========================= */
+
+.section-title {
+  color: #125043;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* =========================
+   Card
+========================= */
+
+.service-card {
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  
+  height: 100%;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+
+.service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Image
+========================= */
+
+.image-box {
+  position: relative;
+
+  width: 100%;
+  height: 220px;
+
+  overflow: hidden;
+}
+
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+
+  
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+
+.service-card:hover .image-box img {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   Icon
+========================= */
+
+.icon-box {
+  position: absolute;
+
+  right: 22px;
+  bottom: -15px;
+
+  width: 68px;
+  height: 85px;
+
+  background-color: #00866f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+
+  font-size: 30px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.icon-box i {
+  color: #fff;
+}
+
+
+/* =========================
+   Card Body
+========================= */
+
+.card-body {
+  padding: 30px 38px 25px;
+  
+}
+
+
+.card-body h3,a {
+  color: #087c67;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  margin-bottom: 14px;
+}
+
+
+
+
+
+
+.card-body p {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  margin-bottom: 15px;
+}
+
+
+.card-body hr {
+  border: 0;
+
+  border-top: 1px solid #eeeeee;
+
+  margin: 15px 0;
+}
+
+
+/* =========================
+   Read More
+========================= */
+
+.read-more {
+  color: #087c67;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: color 0.3s ease;
+}
+
+
+.read-more:hover {
+  color: #e2b34b;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 991px) {
+
+  .image-box {
+    height: 210px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .services-section {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .image-box {
+    height: 230px;
+  }
+
+  .card-body {
+    padding: 25px 28px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+.news-section {
+  padding: 45px 0 70px;
+  background: #fff;
+}
+
+.news-card {
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news-img {
+  height: 198px;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.news-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 64px;
+  height: 64px;
+
+  background: #008568;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  small {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+.news-body {
+  padding: 13px 15px 17px;
+
+  h3 {
+    margin: 0 0 15px;
+
+    color: #08715f;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  p {
+    margin: 0;
+
+    color: #858585;
+    font-size: 12px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .news-section {
+    padding: 30px 0 50px;
+  }
+
+  .news-img {
+    height: 210px;
+  }
+} */

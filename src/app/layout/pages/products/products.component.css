@@ -1,0 +1,149 @@
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/service/service_3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+.hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* سيكشن  الهيدر بعد */
+
+.search-box {
+  height: 66px;
+  background-color: #00805f;
+  color: white;
+  font-size: 14px;
+}
+
+.search-box i {
+  font-size: 20px;
+  color: #f4c542;
+}
+
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 172px;
+  object-fit: cover;
+}
+
+.card h5 {
+  color: #087b61;
+}
+.card h5:hover {
+  color: #b2b428;
+  font-size: 18px;
+}
+
+.category-name {
+  color: #087b61;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.category-count {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #087b61;
+  color: white;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-section {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 35px;
+}
+
+.latest-products {
+  background-color: #eef3f5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.latest-img {
+  width: 78px;
+  height: 65px;
+  object-fit: cover;
+}
+
+.latest-products h5 {
+  color: #064e43;
+}
+
+.latest-products h6 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  .search-box {
+    margin-top: 30px;
+  }
+
+  .latest-products {
+    margin-top: 20px;
+  }
+
+}

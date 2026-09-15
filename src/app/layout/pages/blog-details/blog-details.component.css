@@ -1,0 +1,158 @@
+.hero {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("../../../../assets/images/breadcrumb/blog_bg.jpg");
+    background-size: cover;
+    background-position: 10% 90%;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.58);
+}
+
+
+
+.hero-title {
+    color: #fff;
+
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+
+
+
+
+.hero-subtitle {
+    color: #e2b84b;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comment-form-section {
+    background: #fff;
+}
+
+.comment-form-title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #292929;
+    margin: 0;
+}
+
+/* Inputs */
+.custom-input,
+.custom-textarea {
+    background-color: #eef5f7;
+    border: none;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: #555;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.custom-input {
+    height: 50px;
+    padding: 0 23px;
+}
+
+.custom-textarea {
+    height: 141px;
+    resize: none;
+    padding: 18px 23px;
+}
+
+/* Placeholder */
+.custom-input::placeholder,
+.custom-textarea::placeholder {
+    color: #69777d;
+    opacity: 1;
+}
+
+/* Focus */
+.custom-input:focus,
+.custom-textarea:focus {
+    background-color: #eef5f7;
+    border: none;
+}
+
+/* Button */
+.submit-btn {
+    background-color: #007b5b;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    padding: 0 24px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    transition: .3s;
+}
+
+.submit-btn:hover {
+    background-color: #005e46;
+    color: #fff;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 767px) {
+
+    .comment-form-title {
+        font-size: 22px;
+    }
+
+    .custom-input {
+        height: 50px;
+    }
+
+    .custom-textarea {
+        height: 130px;
+    }
+
+    .submit-btn {
+        width: auto;
+    }
+}
