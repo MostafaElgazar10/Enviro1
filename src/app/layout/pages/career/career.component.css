@@ -1,232 +1,354 @@
+/* =========================
+   HERO
+========================= */
+
 .hero {
-    min-height: 500px;
+  min-height: 500px;
+  position: relative;
 
-    position: relative;
+  display: flex;
+  align-items: center;
 
-    display: flex;
-    align-items: center;
-
-    background-image: url("../../../../assets/images/service/service_3.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
+  background-image: url("../../../../assets/images/service/service_3.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
+  position: absolute;
+  inset: 0;
 
-    background-color: rgba(0, 0, 0, 0.58);
+  background-color: rgba(0, 0, 0, 0.58);
 }
-
-
 
 .hero-title {
-    color: #fff;
+  position: relative;
 
-    font-size: 68px;
-    font-weight: 700;
-    line-height: 1.15;
+  color: #fff;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero-breadcrumb {
+  position: relative;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero-breadcrumb span {
+  color: #e2b84b;
 }
 
 
+/* =========================
+   JOIN SECTION
+========================= */
 
+.join-section {
+  min-height: calc(100vh - 78px);
 
+  padding: 40px 15px 70px;
 
-.hero-subtitle {
-    color: #e2b84b;
-
-    font-size: 16px;
-    font-weight: 600;
-
-    letter-spacing: 2px;
+  background: #fff;
 }
 
 
+/* Icon */
+
+.join-icon {
+  color: #78b82a;
+
+  font-size: 27px;
+  line-height: 1;
+}
 
 
+/* Small Title */
+
+.join-small-title {
+  color: #dcb866;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-top: 5px;
+}
 
 
+/* Main Title */
+
+.main-title {
+  margin: 14px 0 8px;
+
+  color: #005343;
+
+  font-size: 26px;
+  font-weight: 800;
+}
 
 
+/* Description */
+
+.description {
+  max-width: 1000px;
+
+  margin: auto;
+
+  color: #dcb866;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  line-height: 1.8;
+  letter-spacing: .5px;
+
+  text-transform: uppercase;
+}
 
 
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+  max-width: 550px;
+
+  margin: 40px auto 0;
+  padding: 20px 24px 24px;
+
+  background: #fff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, .13);
+}
 
 
+/* =========================
+   UPLOAD
+========================= */
+
+.upload-wrapper {
+  padding: 0;
+  margin-bottom: 25px;
+
+  background: #fff;
+
+  border-radius: 8px;
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+}
 
 
+.upload-box {
+  min-height: 155px;
+
+  margin: 22px;
+
+  border: 2px dashed #e7c77c;
+  border-radius: 6px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ddb75f;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
 
 
+.upload-box:hover {
+  background: #fffaf0;
+
+  border-color: #d9ae4e;
+}
 
 
+.upload-box i {
+  font-size: 25px;
+
+  margin-bottom: 8px;
+}
 
 
+.upload-box span {
+  font-size: 14px;
+
+  color: #ddb75f;
+}
 
 
-        /* Section */
-        .join-section {
-            min-height: calc(100vh - 78px);
-            padding: 40px 15px 70px;
-            background: #fff;
-        }
+.upload-box small {
+  margin-top: 8px;
 
-        .join-icon {
-            color: #78b82a;
-            font-size: 27px;
-            line-height: 1;
-        }
+  max-width: 90%;
 
-        .join-small-title {
-            color: var(--gold);
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-top: 3px;
-        }
+  overflow: hidden;
 
-        .main-title {
-            margin: 14px 0 8px;
-            color: #005343;
-            font-size: 26px;
-            font-weight: 800;
-        }
+  text-overflow: ellipsis;
 
-        .description {
-            max-width: 1000px;
-            margin: auto;
-            color: #dcb866;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 1.8;
-            letter-spacing: .5px;
-            text-transform: uppercase;
-        }
+  white-space: nowrap;
 
-        /* Form Card */
-        .form-card {
-            max-width: 550px;
-            margin: 40px auto 0;
-            padding: 20px 24px 24px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 8px 28px rgba(0, 0, 0, .13);
-        }
+  color: #555;
 
-        /* Upload */
-        .upload-wrapper {
-            padding: 0;
-            margin-bottom: 35px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
-        }
+  font-size: 12px;
+}
 
-        .upload-box {
-            height: 155px;
-            margin: 22px;
-            border: 2px dashed #e7c77c;
-            border-radius: 6px;
 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+/* =========================
+   IMAGE PREVIEW
+========================= */
 
-            color: #ddb75f;
-            cursor: pointer;
-            transition: .3s;
-        }
+.image-preview {
+  margin: 20px 0 30px;
 
-        .upload-box:hover {
-            background: #fffaf0;
-            border-color: #d9ae4e;
-        }
+  text-align: center;
+}
 
-        .upload-box i {
-            font-size: 25px;
-            margin-bottom: 8px;
-        }
 
-        .upload-box span {
-            font-size: 14px;
-            color: #ddb75f;
-        }
+.image-preview img {
+  width: 100%;
 
-        /* Inputs */
-        .form-control {
-            height: 43px;
-            border: 1px solid #e2e2e2;
-            border-radius: 6px;
-            font-size: 12px;
-            color: #555;
-            box-shadow: none;
-        }
+  max-width: 300px;
+  max-height: 250px;
 
-        .form-control::placeholder {
-            color: #777;
-            opacity: 1;
-        }
+  object-fit: cover;
 
-        .form-control:focus {
-            border-color: #008268;
-            box-shadow: 0 0 0 2px rgba(0, 130, 104, .08);
-        }
+  border-radius: 8px;
 
-        /* Send */
-        .send-btn {
-            display: block;
-            margin: 28px auto 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .12);
+}
 
-            background: var(--green);
-            color: white;
-            border: 0;
-            border-radius: 7px;
 
-            min-width: 82px;
-            height: 42px;
+/* =========================
+   INPUTS
+========================= */
 
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: .5px;
-        }
+.form-control {
+  height: 43px;
 
-        .send-btn:hover {
-            background: var(--dark-green);
-        }
+  border: 1px solid #e2e2e2;
 
-        /* Responsive */
-        @media (max-width: 991px) {
-            .navbar-nav {
-                gap: 0;
-            }
+  border-radius: 6px;
 
-            .navbar-nav .nav-link {
-                padding: 10px 0 !important;
-            }
+  font-size: 12px;
 
-            .quote-btn {
-                margin: 10px 0;
-            }
+  color: #555;
 
-            .description {
-                font-size: 10px;
-            }
-        }
+  box-shadow: none;
+}
 
-        @media (max-width: 576px) {
-            .join-section {
-                padding-top: 30px;
-            }
 
-            .main-title {
-                font-size: 22px;
-            }
+.form-control::placeholder {
+  color: #777;
 
-            .form-card {
-                padding: 15px;
-            }
+  opacity: 1;
+}
 
-            .upload-box {
-                margin: 15px;
-            }
-        }
-    
+
+.form-control:focus {
+  border-color: #008268;
+
+  box-shadow: 0 0 0 2px rgba(0, 130, 104, .08);
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.send-btn {
+  display: block;
+
+  margin: 28px auto 0;
+
+  background: #008268;
+
+  color: white;
+
+  border: 0;
+
+  border-radius: 7px;
+
+  min-width: 82px;
+  height: 42px;
+
+  padding: 0 25px;
+
+  font-size: 11px;
+  font-weight: bold;
+
+  letter-spacing: .5px;
+
+  transition: .3s;
+}
+
+
+.send-btn:hover {
+  background: #005343;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .hero-title {
+    font-size: 55px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .hero {
+    min-height: 400px;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-breadcrumb {
+    font-size: 15px;
+  }
+
+  .join-section {
+    padding-top: 30px;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 9px;
+  }
+
+  .form-card {
+    padding: 15px;
+  }
+
+  .upload-box {
+    margin: 15px;
+  }
+
+}

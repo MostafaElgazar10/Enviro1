@@ -1,159 +1,165 @@
+<!-- Hero -->
+<header class="hero">
 
+  <div class="hero-overlay"></div>
 
- 
-  <header class="hero">
+  <div class="container position-relative">
+    <div class="row">
 
-        <div class="hero-overlay"></div>
+      <div class="col-12 text-center">
 
-        <div class="container position-relative">
+        <h1 class="hero-title mb-4">
+          Join Us
+        </h1>
 
-            <div class="row">
+        <h3 class="hero-breadcrumb">
+          Home
+          <span>/ Join Us</span>
+        </h3>
 
-                <div class="col--8">
+      </div>
 
-                
+    </div>
+  </div>
 
-                    <h1 class="hero-title d-flex justify-content-center mb-5">
-                        Join Us
-                    </h1>
-                    <h3 class="d-flex justify-content-center text-white ">Home   <span class="text-warning"> / Joun Us</span></h3>
-
-                  
-
-                </div>
-
-            </div>
-
-        </div>
-
-        
-       
-
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+</header>
 
 
 <!-- Join Section -->
 <section class="join-section">
 
-    <div class="container text-center">
+  <div class="container text-center">
 
-        <!-- Icon -->
-        <div class="join-icon">
-            <i class="bi bi-tree-fill"></i>
+    <!-- Icon -->
+    <div class="join-icon">
+      <i class="bi bi-tree-fill"></i>
+    </div>
+
+    <!-- Small Title -->
+    <div class="join-small-title">
+      JOIN US
+    </div>
+
+    <!-- Main Title -->
+    <h1 class="main-title">
+      we wish you the best of luck!
+    </h1>
+
+    <!-- Description -->
+    <p class="description">
+      LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.
+      FACILIS INVENTORE AMET PORRO DESERUNT, QUIS NAM ESSE
+      ELIGENDI SOLUTA SED EOS CULPA VOLUPTATEM BLANDITIIS
+      IMPEDIT EX, TEMPORE VITAE QUIDEM QUAM? MINIMA?
+    </p>
+
+
+    <!-- Form Card -->
+    <div class="form-card">
+
+      <!-- Upload -->
+     <div class="upload-wrapper">
+
+  <label for="fileUpload" class="upload-box">
+
+    <i class="bi bi-cloud-arrow-up-fill"></i>
+
+    <span>Click to choose image</span>
+
+    <small *ngIf="selectedImage">
+      {{ selectedImage?.name }}
+    </small>
+
+  </label>
+
+  <input
+    id="fileUpload"
+    type="file"
+    accept="image/*"
+    (change)="onFileSelected($event)"
+    style="display: none;"
+  >
+
+</div>
+
+<!-- Preview -->
+<div *ngIf="imagePreview" class="image-preview">
+
+  <img
+    [src]="imagePreview"
+    alt="Selected Image"
+  >
+
+</div>
+
+
+      <!-- Form -->
+      <form>
+
+        <div class="row g-4">
+
+          <!-- Name -->
+          <div class="col-md-6">
+
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+            >
+
+          </div>
+
+
+          <!-- Email -->
+          <div class="col-md-6">
+
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+            >
+
+          </div>
+
+
+          <!-- Phone -->
+          <div class="col-md-6">
+
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="Phone"
+            >
+
+          </div>
+
+
+          <!-- Salary -->
+          <div class="col-md-6">
+
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Salary"
+            >
+
+          </div>
+
         </div>
 
-        <div class="join-small-title">
-            JOIN US
-        </div>
 
-        <h1 class="main-title">
-            we wish you the best of luck!
-        </h1>
+        <!-- Send Button -->
+        <button
+          type="submit"
+          class="send-btn"
+        >
+          SEND
+        </button>
 
-        <p class="description">
-            LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT.
-            FACILIS INVENTORE AMET PORRO DESERUNT, QUIS NAM ESSE
-            ELIGENDI SOLUTA SED EOS CULPA VOLUPTATEM BLANDITIIS
-            IMPEDIT EX, TEMPORE VITAE QUIDEM QUAM? MINIMA?
-        </p>
-
-
-        <!-- Form -->
-        <div class="form-card">
-
-            <!-- Upload -->
-            <div class="upload-wrapper">
-
-                <label for="fileUpload" class="upload-box">
-
-                    <i class="bi bi-cloud-arrow-up-fill"></i>
-
-                    <span>
-                        drag and drop file
-                    </span>
-
-                </label>
-
-                <input
-                    type="file"
-                    id="fileUpload"
-                    hidden
-                >
-
-            </div>
-
-
-            <!-- Inputs -->
-            <form>
-
-                <div class="row g-4">
-
-                    <div class="col-md-6">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="name"
-                        >
-                    </div>
-
-                    <div class="col-md-6">
-                        <input
-                            type="email"
-                            class="form-control"
-                            placeholder="email"
-                        >
-                    </div>
-
-                    <div class="col-md-6">
-                        <input
-                            type="tel"
-                            class="form-control"
-                            placeholder="Phone"
-                        >
-                    </div>
-
-                    <div class="col-md-6">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="salary"
-                        >
-                    </div>
-
-                </div>
-
-                <!-- <button type="submit" class="send-btn">
-                    SEND
-                </button> -->
-                <button type="submit" class="btn btn-success mt-3">
-                    SEND
-                </button>
-
-            </form>
-
-        </div>
+      </form>
 
     </div>
 
+  </div>
+
 </section>
-
-

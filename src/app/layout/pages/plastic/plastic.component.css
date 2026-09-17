@@ -42,3 +42,42 @@
 } */
 
 
+
+
+
+.recycling-link:hover {
+    color: #f8f8f8 !important;
+    background-color: #087d68 !important;
+}
+
+.recycling-link:hover .arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.recycling-link {
+    transition: all 0.3s ease;
+}
+
+.recycling-link .arrow {
+    opacity: 0;
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+
+
+
+/* Active */
+.recycling-link.active-recycling {
+    color: white !important;
+    background-color: #087d68 !important;
+}
+
+.recycling-link.active-recycling .arrow {
+    opacity: 1;
+    transform: translateX(0);
+}
