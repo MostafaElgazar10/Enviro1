@@ -61,7 +61,10 @@
   color: white;
   font-size: 14px;
 }
-
+.green{
+  background-color: #00805f;
+  color: white;
+}
 .search-box i {
   font-size: 20px;
   color: #f4c542;
