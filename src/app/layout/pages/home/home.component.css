@@ -2,6 +2,7 @@
    GLOBAL
 ================================= */
 
+
 :root {
     --primary-color: #087d68;
     --dark-green: #064f45;
@@ -15,11 +16,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
     background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -1275,10 +1284,150 @@ img {
 
 
 
+@media (max-width: 767px) {
+
+  .testimonial-section {
+    min-height: 470px;
+    padding: 50px 15px;
+  }
+
+  .testimonial-slider {
+    min-height: 370px;
+  }
+
+  .testimonial-slide {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0 15px;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .testimonial-item:nth-child(2) {
+    display: none;
+  }
+
+  .testimonial-item img {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+
+  .testimonial-content {
+    width: 100%;
+  }
+
+  .testimonial-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-content span {
+    font-size: 14px;
+  }
+
+  .testimonial-content small {
+    display: block;
+    margin: 5px 0 0;
+  }
+
+}
 
 
+/* =================================
+   FIX HORIZONTAL SCROLL
+================================= */
+
+html,
+body {
+    overflow-x: hidden !important;
+}
+
+section,
+header,
+main {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.row {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
+/* Fix Benefits Section */
+.benefits-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
+/* Fix Testimonial Animation */
+.testimonial-section {
+    overflow: hidden !important;
+}
 
+.testimonial-slider {
+    overflow: hidden;
+}
+
+
+/* Fix Mobile */
+@media (max-width: 767px) {
+
+    .container,
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .row {
+        --bs-gutter-x: 1rem;
+    }
+
+    .hero-title {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-image-wrapper {
+        max-width: 100%;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+
+    .recycling-card,
+    .service-card,
+    .services-card1 {
+        max-width: 100%;
+    }
+
+    .benefits-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero1 .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
